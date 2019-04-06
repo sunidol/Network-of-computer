@@ -63,4 +63,38 @@ Web属于B/S架构的应用软件，在B/S架构中，浏览器与服务器沟�
  
  响应体:这次请求服务端想要返回给客户端的数据正文，一般返回的都是 HTML，也可以返回 JavaScript 或者 CSS（需要修改响应头中的响应类型）。
  
+ ### 2.2 请求方式
+ 
+ + GET - 从指定的资源请求数据
+ + POST - 向指定的资源提交要被处理的数据
+ 
+ #### GET 方法
+ 
+ 请注意，查询字符串（名称/值对）是在 GET 请求的 URL 中发送的：
+
+    /test/demo_form.asp?name1=value1&name2=value2
+    
+ #### POST 方法
+ 
+ 请注意，查询字符串（名称/值对）是在 POST 请求的 HTTP 消息主体中发送的：
+ 
+    POST /test/demo_form.asp HTTP/1.1
+    Host: w3schools.com
+    name1=value1&name2=value2
+ 
+ #### 比较GET与POST
+ 
+  ![image](https://github.com/sunidol/Network-of-computer/blob/master/image/pic6.jpg)
+  
+ 
+ ### 2.3 状态码
+ 
+ 状态代码由三位数字组成，第一个数字定义了响应的类别，且有五种可能取值。
+ 
+ + 1xx：指示信息 —— 表示请求已接收，继续处理。
+ + 2xx：成功 —— 表示请求已被成功接收、理解、接受。
+ + 3xx：重定向 —— 要完成请求必须进行更进一步的操作。
+ + 4xx：客户端错误 —— 请求有语法错误或请求无法实现。
+ + 5xx：服务器端错误 —— 服务器未能实现合法的请求。
+ 
  
